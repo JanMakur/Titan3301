@@ -1,16 +1,31 @@
-### Hi there 👋
-
-<!--
-**Titan3301/Titan3301** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+```ts
+interface GitHubReadMeInterface {
+  username:string | null | undefined;
+  name: Array<string> | string | null | undefined;
+  likes: Array<string> | string | null | undefined;
+  hobby:string | null | undefined;
+  worksat:string | null | undefined;
+}
+class GitHubReadMe {
+  username:string | null | undefined;
+  name: string | null | undefined;
+  likes: Array<string> | string | null | undefined;
+  hobby: Array<string> | string | null | undefined;
+  worksat:string | null | undefined;
+  
+  constructor(data:GitHubReadMeInterface) {
+    this.username = data.username;
+    this.name = data.name;
+    this.likes = data.likes;
+    this.hobby = data.hobby;
+    this.worksat = data.worksat;
+  }
+}
+let self = {};
+self.readme = new GitHubReadMe({
+  username:'Titan3301',
+  name:undefined,
+  likes:['typescript' , 'javascript' , 'rust'],
+  hobby:['Programming'],
+  worksat:undefined
+})
