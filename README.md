@@ -1,10 +1,10 @@
 ```ts
 interface GitHubReadMeInterface {
   username:string | null | undefined;
-  name: Array<string> | string | null | undefined;
+  name: string | null | undefined;
   likes: Array<string> | string | null | undefined;
-  hobby:string | null | undefined;
-  worksat:string | null | undefined;
+  hobby: Array<string> | string | null | undefined;
+  worksat: string | null | undefined;
 }
 class GitHubReadMe {
   username:string | null | undefined;
