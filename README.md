@@ -25,7 +25,7 @@ let self = {};
 self.readme = new GitHubAboutMe({
   username:'Titan3301',
   name:undefined,
-  likes:['typescript' , 'javascript' , 'rust'],
+  likes:['typescript' , 'javascript' , 'csharp'],
   hobby:['Programming'],
   worksat:undefined
 })
