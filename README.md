@@ -30,5 +30,6 @@ self.readme = new GitHubAboutMe({
   name:undefined,
   likes:['TypeScript','JavaScript','C#','Rust'],
   hobby:['Programming'],
-  worksat:undefined
+  worksat:undefined,
+  telegram:'@Titan1337'
 })
